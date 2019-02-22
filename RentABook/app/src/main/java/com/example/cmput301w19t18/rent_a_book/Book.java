@@ -5,6 +5,7 @@ public class Book {
     private String btitle;
     private String author;
     private String genre;
+    private final Integer isbn;
     private Integer ISBN;
     private String bstatus;
     private String owner;
@@ -17,6 +18,13 @@ public class Book {
     //constructor
     private Book (String btitle, String author, String genre, Integer ISBN, String bstatus, String owner, Integer rating){
         //code
+        this.btitle = btitle;
+        this.author = author;
+        this.genre = genre;
+        isbn = ISBN;
+        this.bstatus = bstatus;
+        this.owner = owner;
+        this.rating = rating;
     }
 
     private void addPhoto (String fileName){
